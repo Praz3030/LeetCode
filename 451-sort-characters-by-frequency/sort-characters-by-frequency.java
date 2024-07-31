@@ -10,12 +10,14 @@ class Solution {
         
         String ans="";
 
-        for(char c:chars){
-            int n=map.get(c);
-            for(int i=0;i<n;i++){
-                ans+=c;
+        StringBuilder result = new StringBuilder();
+        for (char c : chars) {
+            int freq = map.get(c);
+            for (int i = 0; i < freq; i++) {
+                result.append(c);
             }
         }
-        return ans;
+
+        return result.toString();
     }
 }

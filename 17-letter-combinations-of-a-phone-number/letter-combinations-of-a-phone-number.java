@@ -5,7 +5,8 @@ class Solution {
             return ans;
         }
 
-        String letters[]={"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+        String letters[]=new String[] {"","","abc","def","ghi","jkl","mno",
+"pqrs","tuv","wxyz"};
 
         Queue<String> queue= new LinkedList<>();
         queue.add("");

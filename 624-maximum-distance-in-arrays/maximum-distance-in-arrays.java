@@ -3,8 +3,9 @@ class Solution {
         int min = arrays.get(0).get(0);
         int max = arrays.get(0).get(arrays.get(0).size() - 1);
         int ans = 0;
+        int n = arrays.size();
 
-        for (int i = 1; i < arrays.size(); i++) {
+        for (int i = 1; i < n ; i++) {
             List<Integer> array = arrays.get(i);
             int currentMin = array.get(0);
             int currentMax = array.get(array.size() - 1);
